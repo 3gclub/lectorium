@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.main-block1 {
+  width: 100px;
+  background-color: #9AFF78;
+}
+
+.main-block2,
+.main-block3 {
+  flex-grow: 50;
+}
+
+.main-block2 {
+  background-color: #D0FF00;
+}
+
+.main-block3 {
+  background-color: hotpink;
+}

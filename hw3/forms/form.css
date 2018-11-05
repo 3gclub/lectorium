@@ -1,0 +1,27 @@
+.red-text {
+   color: #ff0000;
+ }
+
+label {
+width: 100%;
+}
+
+.line-height:first-of-type {
+  padding-top: 0;
+}
+
+.line-height {
+  padding-top: 15px;
+}
+
+.d-block {
+  display: block;
+}
+
+.p-bottom {
+  padding-bottom: 20px;
+}
+
+.action-buttons {
+  padding-top: 15px;
+}

@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 100px repeat(2, 1fr);
+  min-height: 100vh;
+}
+
+.main-block1 {
+  background-color: #9AFF78;
+}
+
+.main-block2 {
+  background-color: #D0FF00;
+}
+
+.main-block3 {
+  background-color: hotpink;
+}
