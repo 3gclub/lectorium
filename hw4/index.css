@@ -1,0 +1,526 @@
+/* General */
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #fff;
+  /*font-family: "Montserrat -Black";*/
+  font-size: 42px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f3f3f3;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+input {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* nav block */
+
+.brand-name {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1.92px;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+nav a {
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.25s;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+nav a:hover:after,
+nav a.active:after {
+  content: '';
+  display: block;
+  width: calc(100% + 10px);
+  height: 2px;
+  transform: translateX(-5px);
+}
+
+nav a:hover {
+  color: aqua;
+}
+
+nav a:hover:after {
+  background: #ff0000;
+}
+
+nav a.active:after {
+  background: #800080;
+}
+
+/* Header block */
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.header-bg-image {
+  background: url("img/2.png") no-repeat center/cover;
+  position: relative;
+  min-height: 800px;
+}
+
+.header-bg-image:after {
+  content: '';
+  display: block;
+  background-color: #212121;
+  opacity: 0.87;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header-text {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 50;
+}
+
+.header-text p {
+  /* Text style for "inspiratio" */
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 27px;
+  font-variant: small-caps;
+  letter-spacing: 1.4px;
+}
+
+.header-button {
+  /* Text style for "read more" */
+  display: inline-block;
+  width: 170px;
+  height: 45px;
+  box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+  border-radius: 22px;
+  background-color: #303f9f;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  font-variant: small-caps;
+  letter-spacing: 1.2px;
+}
+
+.header-button:hover {
+  background-color: #6a6bff;
+}
+
+/* Main block */
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 820px 330px;
+  grid-gap: 20px;
+}
+
+section {
+  background-color: #7fffd4;
+  margin-bottom: 20px;
+}
+
+.full-width-article {
+  margin-bottom: 40px;
+}
+
+article {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.article-img,
+.article-text,
+.article-author {
+  background: #fff;
+}
+
+.article-text h3,
+.article-text p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.article-text h3 {
+  /* Text style for "10 Things" */
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+
+.article-text p {
+  /* Text style for "Text in big block */
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.64px;
+}
+
+.article-author {
+  margin-top: 1px;
+}
+
+.author-name {
+  /* Text style for "Henry Litt" */
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.7px;
+}
+
+.date-publication {
+  color: #212121;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.6px;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+/* small blocks */
+
+.h3-small-block {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+}
+
+.p-small-block {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.56px;
+}
+
+.more-button {
+  color: #000;
+  font-family: "Material Icons";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 1.2px;
+}
+
+.aside-categories {
+  margin-bottom: 40px;
+}
+
+.aside-categories p {
+  color: #3f51b5;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.15px;
+  border-bottom: 1px solid #2962ff;
+}
+
+.aside-categories ul li a {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.56px;
+}
+
+.sidebar {
+  background: #fff;
+  border-radius: 4px 4px 0 0;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.aside-form p {
+  color: #3f51b5;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.15px;
+  border-bottom: 1px solid #2962ff;
+}
+
+.aside-form form {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.8px;
+}
+
+ul.sidebar-category-list li {
+  display: block;
+  border-bottom: 1px solid #000;
+}
+
+ul.sidebar-category-list li:last-of-type {
+  border-bottom: none;
+}
+
+ul.sidebar-category-list li a {
+  display: flex;
+}
+
+ul.sidebar-category-list li a span {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.sidebar-span {
+  text-align: right;
+}
+
+.aside-subscribe-name,
+.aside-subscribe-email {
+  display: block;
+}
+
+.button-sidebar {
+  border-bottom: 1px solid #000;
+}
+
+.form-button-sidebar {
+  cursor: pointer;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  font-variant: small-caps;
+  letter-spacing: 1.2px;
+}
+
+.form-button-sidebar:hover {
+  background-color: #6a6bff;
+}
+
+.three-last-articles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.three-last-articles article {
+  width: 100%;
+  max-width: calc((100% / 3) - 10px);
+}
+
+.load-more-articles {
+  text-align: right;
+}
+
+/* icons */
+.icon {
+  font-size: 0;
+  display: block;
+  height: 30px;
+  width: 30px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* icons in big blog foto */
+.span-7 {
+  color: #ff36c2;
+  font-family: "Material Icons";
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Material Icons";
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  line-height: 90px;
+  font-family: "Font Awesome";
+  line-height: 24px;
+}
+
+.span-15 {
+  color: #ff36c2;
+  font-family: "Material Icons";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 0.9px;
+}
+
+/* Footer block */
+footer {
+  background: #fff;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.footer-form form label {
+  color: #ffffff;
+  font-family: "Montserrat - Black";
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 36px;
+  /* Text style for "Subscribe" */
+  letter-spacing: 2.1px;
+}
+
+#foot-form {
+  /* Text style for "Email Adre" */
+  width: 270px;
+  height: 45px;
+  border-radius: 22px;
+  border: 1px solid #fff;
+  background-color: #303030;
+  opacity: 0.38;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.8px;
+}
+
+.form-button-footer {
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+  border-radius: 22px;
+  background-color: #303f9f;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  font-variant: small-caps;
+  letter-spacing: 1.2px;
+}
+
+.form-button-footer:hover {
+  background-color: #6a6bff;
+}
+
+.footer-nav-container {
+  /*width: 1920px;*/
+  /*height: 80px;*/
+  background-color: #303030;
+}
+
+.foot-menu li a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.lang-search {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  font-variant: small-caps;
+  /* Text style for "eng" */
+  letter-spacing: 0.8px;
+}
