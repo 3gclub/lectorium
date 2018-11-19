@@ -1,0 +1,33 @@
+.red-text {
+  color: #ff0000;
+}
+
+label {
+  width: 100%;
+}
+
+/* FIX This not a good practice - you name the class with line-height, but the style property is padding. */
+.about-me:first-of-type {
+  padding-top: 0;
+}
+
+.about-me {
+  padding-top: 15px;
+}
+
+.d-block {
+  display: block;
+}
+
+.p-bottom {
+  padding-bottom: 20px;
+}
+
+.action-buttons {
+  padding-top: 15px;
+}
+/* add ul vithout div. I have to delete margin or padding!!!! */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+.general-wrapper {
+  /*display: grid;*/
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  background: #f3f3f3;
+}
+
+h2 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+}
+
+a {
+  text-decoration: none;
+}
