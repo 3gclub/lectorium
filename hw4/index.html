@@ -2,223 +2,303 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>hw4.2</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="nav-head.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="sidebar.css">
-  <link rel="stylesheet" href="footer.css">
+  <title>4.4</title>
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-<div class="general-wrapper">
-
-  <div class="head-header-wrapper">
-    <div class="nav-head-wrapper">
+<!---------------------- Header ------------------------------------>
+<div class="nav-header-wrapper">
+  <div class="container">
+    <div class="logo-links-block">
+      <!-- Logo -->
       <div class="logo">
         <p>pasco</p>
       </div>
+      <!-- Links -->
       <div class="nav-head-links">
-        <ul class="nav-ul-menu">
-          <li><a href="#">home</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">pages</a></li>
-          <li><a href="#">shop</a></li>
-          <li><a href="#">components</a></li>
-          <li><a href="#">features</a></li>
-        </ul>
+        <div class="nav-links">
+          <ul class="nav-ul-menu">
+            <li><a class="active" href="#">home</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">pages</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">components</a></li>
+            <li><a href="#">features</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="header-text-block">
-      <p>inspiration</p>
-      <h2>5 ways milllennials can start<br> building their future today</h2>
-      <a href="https://www.w3schools.com/html/html_layout.asp" target="_blank" title="link to read more"
-         class="header-button">read more</a>
+
     </div>
   </div>
-  <!--------------- MAIN-WRAPPER Block-------------------------------->
-  <div class="main-wrapper">
-    <div class="blogs-container">
-      <!--BIG Block-->
-      <div class="main-big-block">
-        <div class="main-big-block-img">
+  <!-- Head -->
+  <div class="container">
+    <div class="head-header">
+      <div class="header-text-block">
+        <p>inspiration</p>
+        <h2>5 ways milllennials can start<br> building their future today</h2>
+        <a href="https://www.w3schools.com/html/html_layout.asp" target="_blank" title="link to read more"
+           class="header-button">read more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------  Main and Sidebar -------------------------------->
+<div class="content-block container">
+  <!---------------------- Main general start --------------------------------------->
+  <div class="main-content-block">
+    <!------------- mine-big-blog ----------------->
+    <div class="big-article">
+      <article>
+        <!-- image -->
+        <div class="article-block-img">
           <img src="img/1.png" alt="background image">
-          <!--<div class="btns-wrapper">-->
-            <!--<span class="span-7"><img src="img/facebook.png"></span>-->
-            <!--<span class="span-15"><img src="img/like7.png"></span>-->
-          <!--</div>-->
+
+          <div class="elements-on-img-big-blog">
+            <div class="view-img">
+              <img src="img/wiew-forum.png" alt="wiew">
+              <span>7</span>
+            </div>
+            <div class="like">
+              <img src="img/like-hard.png">
+              <span>15</span>
+            </div>
+          </div>
+
         </div>
         <div class="article-text">
           <h3>10 Things To Do To Change Your Life Forever</h3>
           <p>The one constant thing in our life is change. We cannot avoid it and the more we resist change the
             tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
         </div>
-        <div class="article-author">
-          <img src="img/3.png" alt="avatar">
-        </div>
-        <div class="author-name">
-          <p>Henry Little</p>
-        </div>
-        <div class="date-publication">
-          <p>Apri 28, 2016 10:15</p>
-        </div>
-        <div class="more-button">
-          <a href="#">
-            <img src="img/more-blog.png"></a>
-        </div>
-      </div>
-      <!--Three blocks-->
-      <div class="main-three-blocks">
-        <!--LEFT-->
-        <div class="left-small-block">
-          <div class="small-block-img">
-            <img src="img/4.png" alt="background photo">
-            <div class="btns-small-block">
-              <span class="span-7">span7</span>
-              <span class="span-15">span15</span>
+        <!-- avatar,name,date,more button -->
+        <div class="author-more_button-wrapper">
+          <div class="article-author">
+            <div class="avatar">
+              <img src="img/3.png" alt="avatar">
             </div>
-          </div>
-          <div class="small-block-text">
-            <h3 class="h3-small-block">Food That Actually Taste
-              Better When You Freeze </h3>
-            <p class="p-small-block">Lorem ipsum dolor sit amet, to consectetur adipi scing elit. Nulla vel vehicula
-              lorem and lacus.
-              Vestibulum vitae mauris.</p>
-          </div>
-          <div class="small-block-author">
-            <img src="img/5.png" alt="author avatar photo">
-          </div>
-          <div class="small-block-author-name">
-            <p>James Leman</p>
-          </div>
-          <div class="small-block-date-publication">
-            <p>April 28, 2016 </p>
-          </div>
-          <div class="small-block-more-button">
-            <span><img src="img/more-blog.png" </span>
-          </div>
-        </div>
-        <!--CENTRAL-->
-        <div class="central-small-block">
-          <div class="small-block-img">
-            <img src="img/6.png" alt="background photo">
-            <div class="btns-small-block">
-              <span class="span-7">span7</span>
-              <span class="span-15">span15</span>
+            <div class="name-and-date">
+              <div class="author-name">
+                <p>Henry Little</p>
+              </div>
+              <div class="date-publication">
+                <p>Apri 28, 2016 10:15</p>
+              </div>
             </div>
-          </div>
-          <div class="small-block-text">
-            <h3 class="h3-small-block">Food That Actually Taste
-              Better When You Freeze </h3>
-            <p class="p-small-block">Lorem ipsum dolor sit amet, to consectetur adipi scing elit. Nulla vel vehicula
-              lorem and lacus.
-              Vestibulum vitae mauris.</p>
-          </div>
-          <div class="small-block-author">
-            <img src="img/7.png" alt="author avatar photo">
-          </div>
-          <div class="small-block-author-name">
-            <p>James Leman</p>
-          </div>
-          <div class="small-block-date-publication">
-            <p>April 28, 2016 </p>
-          </div>
-          <div class="small-block-more-button">
-            <span><img src="img/more-blog.png"</span>
-          </div>
-        </div>
-        <!--RIGHT-->
-        <div class="right-small-block">
-          <div class="small-block-img">
-            <img src="img/8.png" alt="background photo">
-            <div class="btns-small-block">
-              <span class="span-7">span7</span>
-              <span class="span-15">span15</span>
-            </div>
-          </div>
-          <div class="small-block-text">
-            <h3 class="h3-small-block">Food That Actually Taste
-              Better When You Freeze </h3>
-            <p class="p-small-block">Lorem ipsum dolor sit amet, to consectetur adipi scing elit. Nulla vel vehicula
-              lorem and lacus.
-              Vestibulum vitae mauris.</p>
-          </div>
-          <div class="small-block-author">
-            <img src="img/9.png" alt="author avatar photo">
-          </div>
-          <div class="small-block-author-name">
-            <p>James Leman</p>
-          </div>
-          <div class="small-block-date-publication">
-            <p>April 28, 2016 </p>
-          </div>
-          <div class="small-block-more-button">
-            <span><img src="img/more-blog.png"</span>
-          </div>
-        </div>
-      </div>
-      <!--  MORE button in MINE-wrapper block -->
-      <div class="load-more-articles">
-        <a class="a-more" href="#">More</a>
-        <a href="#">
-          <img class="more-img" src="img/more.png">
-        </a>
 
-      </div>
+          </div>
+          <div class="more-button">
+            <a href="#">
+              <img src="img/more-blog.png" alt="read-more-button">
+            </a>
+          </div>
+        </div>
+
+      </article>
     </div>
 
-
-    <!--SIDEBAR block-->
-    <div class="sidebar-block">
-      <div class="sidebar">
-        <div class="aside-categories">
-          <p>CATEGORIES</p>
-          <div class="aside-grid-wrapper">
-            <div class="sidebar-a1"><a href="#">Photography</a></div>
-            <div class="sidebar-span1"><a href="#">195</a></div>
-            <div class="sidebar-a2"><a href="#">PIllustration</a></div>
-            <div class="sidebar-span2"><a href="#">15</a></div>
-            <div class="sidebar-a3"><a href="#">Graphic Design</a></div>
-            <div class="sidebar-span3"><a href="#">36</a></div>
-            <div class="sidebar-a4"><a href="#">Web design</a></div>
-            <div class="sidebar-span4"><a href="#">220</a></div>
-            <div class="sidebar-a5"><a href="#">Videography</a></div>
-            <div class="sidebar-span5"><a href="#">17</a></div>
+    <div class="three-articles">
+      <article>
+        <!-- image -->
+        <div class="article-small-block-img">
+          <img src="img/4.png" alt="background image">
+          <div class="elements-on-img-small-block">
+            <div class="inspiration-text">
+              <span>inspiration</span>
+            </div>
+            <div class="view-img-small">
+              <img src="img/wiew-forum.png" alt="wiew">
+              <span>7</span>
+            </div>
+            <div class="like">
+              <img src="img/like-hard.png">
+              <span>15</span>
+            </div>
           </div>
         </div>
-
-      </div>
-
-      <div class="aside-form">
-        <p>SUBSCRIBE</p>
-        <form action="">
-          <label for="sub1" class="aside-subscribe-name">Name</label>
-          <input type="text" name="subscribe-form" id="sub1" required placeholder="Name">
-
-          <label for="email" class="aside-subscribe-email">Email</label>
-          <input id="email" type="email" name="email" required placeholder="Email@adress.com">
-          <!-- Sidebar Button Subscribe -->
-          <div class="button-sidebar">
-            <button class="form-button-sidebar" type="submit" value="Submit">Subscribe</button>
-          </div>
-        </form>
-        <div class="social-icons">
-          <ul class="social-ul-icons">
-            <li><span class="icon icon-fb">facebook</span></li>
-            <li><span class="icon icon-tw">twitter</span></li>
-            <li><span class="icon icon-vk">Vkontakte</span></li>
-            <li><span class="icon icon-p">pinterest</span></li>
-            <li><span class="icon icon-t">tumbir</span></li>
-            <li><span class="icon icon-d">dribble</span></li>
-          </ul>
+        <div class="article-smallblog-text">
+          <h3>Food That Actually Taste
+            Better When You Freeze </h3>
+          <p>
+            Lorem ipsum dolor sit amet, to consectetur adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum
+            vitae mauris.
+          </p>
         </div>
+        <!-- avatar,name,date,more button -->
+        <div class="author-more_button-wrapper-smallblock">
+          <div class="article-author">
+            <div class="avatar">
+              <img src="img/5.png" alt="avatar">
+            </div>
+            <div class="name-and-date-smallblock">
+              <div class="author-name">
+                <p>James Leman</p>
+              </div>
+              <div class="date-publication">
+                <p>Apri 28, 2016 10:15</p>
+              </div>
+            </div>
+          </div>
+          <div class="more-button-smallblock">
+            <a href="#">
+              <img src="img/more-blog.png" alt="read-more-button">
+            </a>
+          </div>
+        </div>
+      </article>
+      <article>
+        <!-- image -->
+        <div class="article-block-img">
+          <img src="img/6.png" alt="background image">
+          <div class="elements-on-img-small-block">
+            <div class="inspiration-text">
+              <span>trip</span>
+            </div>
+            <div class="view-img-small">
+              <img src="img/wiew-forum.png" alt="wiew">
+              <span>7</span>
+            </div>
+            <div class="like">
+              <img src="img/like-hard.png">
+              <span>15</span>
+            </div>
+          </div>
+        </div>
+        <div class="article-smallblog-text">
+          <h3>Why It’s Amazing To Date
+            People Who Love Traveling</h3>
+          <p>
+            Lorem ipsum dolor sit amet, to consectetur adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum
+            vitae mauris.
+          </p>
+        </div>
+        <!-- avatar,name,date,more button -->
+        <div class="author-more_button-wrapper-smallblock">
+          <div class="article-author">
+            <div class="avatar">
+              <img src="img/7.png" alt="avatar">
+            </div>
+            <div class="name-and-date-smallblock">
+              <div class="author-name">
+                <p>Benjamin Miller</p>
+              </div>
+              <div class="date-publication">
+                <p>Apri 28, 2016 10:15</p>
+              </div>
+            </div>
+          </div>
+          <div class="more-button-smallblock">
+            <a href="#">
+              <img src="img/more-blog.png" alt="read-more-button">
+            </a>
+          </div>
+        </div>
+      </article>
+      <article>
+        <!-- image -->
+        <div class="article-block-img">
+          <img src="img/8.png" alt="background image">
+          <div class="elements-on-img-small-block">
+            <div class="inspiration-text">
+              <span>lifestyle</span>
+            </div>
+            <div class="view-img-small">
+              <img src="img/wiew-forum.png" alt="wiew">
+              <span>7</span>
+            </div>
+            <div class="like">
+              <img src="img/like-hard.png">
+              <span>15</span>
+            </div>
+          </div>
+        </div>
+        <div class="article-smallblog-text">
+          <h3>5 Useful Tips for Novice
+            Painters
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, to consectetur adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum
+            vitae mauris.
+          </p>
+        </div>
+        <!-- avatar,name,date,more button -->
+        <div class="author-more_button-wrapper-smallblock">
+          <div class="article-author">
+            <div class="avatar">
+              <img src="img/3.png" alt="avatar">
+            </div>
+            <div class="name-and-date-smallblock">
+              <div class="author-name">
+                <p>Henry Little</p>
+              </div>
+              <div class="date-publication">
+                <p>Apri 28, 2016 10:15</p>
+              </div>
+            </div>
+          </div>
+          <div class="more-button-smallblock">
+            <a href="#">
+              <img src="img/more-blog.png" alt="read-more-button">
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="load-more-articles">
+      <a class="a-more" href="#">More</a>
+      <a class="more-img" href="#">
+        <img src="img/more.png">
+      </a>
+    </div>
+  </div>
+  <!---------------------- Main general end --------------------------------------->
+  <!------------------------- Sidebar general ----------------------------------->
+  <div class="sidebar">
+    <div class="aside-categories">
+      <p>CATEGORIES</p>
+      <ul class="sidebar-category-list">
+        <li><a href="#">Photography <span>195</span></a></li>
+        <li><a href="#">Illustration <span>15</span></a></li>
+        <li><a href="#">Graphic Design <span>36</span></a></li>
+        <li><a href="#">Web design <span>220</span></a></li>
+        <li><a href="#">Videography <span>17</span></a></li>
+      </ul>
+    </div>
+
+    <div class="aside-form">
+      <p>SUBSCRIBE</p>
+      <form action="">
+        <label for="sub1" class="aside-subscribe-name">Name</label>
+        <input id="sub1" type="text" name="subscribe-form" required placeholder="Name">
+
+        <label for="email" class="aside-subscribe-email">Email</label>
+        <input id="email" type="email" name="email" required placeholder="Email@adress.com">
+        <!-- Sidebar Button Subscribe -->
+        <div class="button-sidebar">
+          <button class="form-button-sidebar" type="submit" value="Submit">Subscribe</button>
+        </div>
+      </form>
+      <div class="social-icons">
+        <ul>
+          <li><span class="icon icon-fb">facebook</span></li>
+          <li><span class="icon icon-tw">twitter</span></li>
+          <li><span class="icon icon-vk">Vkontakte</span></li>
+          <li><span class="icon icon-p">pinterest</span></li>
+          <li><span class="icon icon-t">tumbir</span></li>
+          <li><span class="icon icon-d">dribble</span></li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
-<!------------- Footer ----------------------------------------------->
+
+<!---------------------------- Footer general ------------------------------------>
 <div class="footer-wrapper">
   <div class="footer-gallery-block">
     <img src="img/img1-footer.png" alt="background photo">

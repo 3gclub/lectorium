@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
-.general-wrapper {
-  /*display: grid;*/
-  min-height: 100vh;
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  background: #f3f3f3;
 }
 
 h2 {
@@ -19,4 +21,11 @@ h2 {
 
 a {
   text-decoration: none;
+  padding: 0;
+}
+
+.content-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
 }
