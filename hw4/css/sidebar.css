@@ -12,8 +12,12 @@
   margin-bottom: 30px;
 }
 
+.search-sidebar-form {
+  position: relative;
+}
+
 .search-sidebar-form input {
-  position: absolute;
+  padding-right: 43px;
   width: 272px;
   height: 48px;
   border-radius: 22px;
@@ -22,7 +26,20 @@
 }
 
 .search-sidebar-form button {
-  position: relative;
+  position: absolute;
+  top: 15px;
+  right: 3px;
+  border-radius: 50%;
+  box-shadow: 0 2px 13px rgba(0, 0, 0, 0.12);
+  background-color: #ff4081;
+  width: 35px;
+  height: 35px;
+}
+
+.search-sidebar-form .fa-search {
+  border-right: 0;
+  padding-right: 0;
+  color: #fff;
 }
 
 
