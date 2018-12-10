@@ -1,52 +1,7 @@
-/*-------- Top menu start ------------------*/
-.top-menu {
-  background-color: #191919;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.header-top-menu-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-soc-networks li a i {
-  color: rgb(122, 122, 122);
-}
-
-.social-top-menu ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.top-sing-and-lang {
-  display: flex;
-  margin-right: 15px;
-}
-
-.sign-top-menu {
-  display: flex;
-  margin-right: 5px;
-}
-
-.top-lang {
-  width: 81px;
-  height: 23px;
-  border-left: 1px solid #b4b4b4;;
-  margin-top: -2px;
-  padding-left: 5px;
-}
-
-.sign-top-menu {
-  width: 69px;
-  height: 16px;
-}
-
-
-/*-------- Top menu end ------------------*/
 /*------- Logo and Nav block ----------*/
 .logo-links-block {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -58,24 +13,9 @@
   text-transform: uppercase;
   letter-spacing: 1.92px;
   padding-top: 14px;
-  margin-right: 100px;
 }
 
-.nav-links {
-  display: flex;
-}
-
-.nav-ul-icons li {
-  display: inline-block;
-  color: #fff;
-  margin-top: 28px;
-}
-
-.nav-ul-menu {
-  margin-right: 60px;
-}
-
-.nav-ul-menu a {
+.nav-links a {
   text-transform: uppercase;
   padding-right: 16px;
   padding-bottom: 25px;
@@ -89,16 +29,16 @@
   background: url("../img/bird_nav.png") no-repeat right 5px;
 }
 
-.nav-ul-menu li:not(:first-of-type) a {
+.nav-links li:not(:first-of-type) a {
   margin-left: 14px;
 }
 
-.nav-ul-menu a:hover {
+.nav-links a:hover {
   color: #0ff;
 }
 
-.nav-ul-menu a.active:after,
-.nav-ul-menu a:hover:after {
+.nav-links a.active:after,
+.nav-links a:hover:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -115,21 +55,6 @@
 .nav-ul-menu li {
   display: inline-block;
   padding-top: 26px;
-}
-
-.fa-search {
-  border-right: 1px solid #b4b4b4;
-  padding-right: 15px;
-}
-
-.fa-heart {
-  border-right: 1px solid #b4b4b4;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.fa-shopping-cart {
-  padding-left: 15px;
 }
 
 /*---- Head Block --------------*/
@@ -154,7 +79,7 @@
 .header-text-block p {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
+  font-variant: small-caps;
   letter-spacing: 1.4px;
   margin-bottom: 46px;
   margin-top: 51px;
@@ -181,53 +106,4 @@
 
 .header-button:hover {
   background-color: #6a6bff;
-}
-/*--- Header Author ----*/
-.header-author {
-  text-align: center;
-  padding-bottom: 70px;
-}
-
-.avatar-header-author {
-  margin-bottom: 20px;
-}
-
-.name-header-author p {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 27px;
-  letter-spacing: 0.7px;
-}
-
-.header-date-author {
-  margin-bottom: 20px;
-}
-
-.header-date-author p {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 27px;
-  letter-spacing: 0.6px;
-}
-
-.head-comment-author,
-.head-likes-author {
-  display: inline-block;
-}
-
-.head-comment-author {
-  margin-right: 10px;
-}
-
-.head-date-date,
-.header-date-time {
-  display: inline-block;
-}
-
-.head-date-date {
-  margin-right: 10px;
 }
