@@ -1,0 +1,68 @@
+.header-menu li {
+  color: #00f;
+  font-family: "Halcom - Medium", serif;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1.04px;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.header-menu ul {
+  display: flex;
+  background: #a7a944;
+}
+
+.main-block {
+  min-height: 200px;
+  background: #cffffa;
+}
+
+.main-block {
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  background: #d5ffa5;
+  min-height: 20px;
+}
+
+/* acc */
+.acc-header {
+  background: red;
+}
+
+.acc-content {
+  background: green;
+  height: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.active .acc-content {
+  height: auto;
+  visibility: visible;
+  position: relative;
+}
+
+/* popup */
+.popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(51, 51, 51, 0.55);
+  display: none;
+}
+
+.popup2 {
+  display: block;
+}
+
+.popup-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
