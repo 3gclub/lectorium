@@ -1,0 +1,17 @@
+/*
+Theme Name: twentynineteen child
+Template: twentynineteen
+
+Theme URI: https://github.com/WordPress/twentynineteen
+Description: Дочерняя тема для темы twentynineteen
+Author: Roman 
+Author URI: https://wordpress.org/
+Version: 1.0
+*/
+
+/* Child Theme Style.css styles begin here! */
+.site-footer {
+	background: #ffe4c4;
+}
+
+
